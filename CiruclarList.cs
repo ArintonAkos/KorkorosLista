@@ -67,7 +67,7 @@ namespace DataStructures
 
         #region Private Members
 
-        private int _Length;
+        private int _Length = 0;
         private Node _Start = null;
         private Node _Selected = null;
 
@@ -335,6 +335,7 @@ namespace DataStructures
             }
         }
 
+        /// <inheritdoc />
         public T FindWhere(Func<T, bool> action)
         {
             bool found = false;
